@@ -2,8 +2,9 @@ services:
   self-intro-app:
     build:
       context: .
+      dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app
+      - ./:/app
     ports:
       - "5004:3000"
     tty: true
