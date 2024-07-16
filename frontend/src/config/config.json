@@ -12,10 +12,11 @@
             {
                 "name":"github",
                 "url":"https://github.com/shunsuke-kawata",
-                "icon_path":"/github-original.svg",
+                "icon_path":"/assets/github-original.svg",
                 "alt_string":"githubのアイコン"
             }
         ],
+        "icon_path":"/assets/profile-header-img.png",
         "hobbies":["ライブ参加","カラオケ","音楽を聴く"],
         "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN"],
         "favorite_comedians":["ジャルジャル","さらば青春の光"],
@@ -28,9 +29,53 @@
             {
                 "language":"Python",
                 "description":"データ処理やバックエンド、機械学習など",
-                "icon_path":"",
-                "alt_string":"Pythonのアイコン"
+                "icon_path":"/assets/python-original.svg",
+                "alt_string":"Pythonのアイコン",
+                "related_tech":[
+                    {
+                        "language":"Python",
+                        "icon_path":"/assets/python-original.svg",
+                        "alt_string":"Pythonのアイコン"
+                    }
+                ]
+            },
+            {
+                "language":"TypeScript",
+                "description":"フロントエンド",
+                "icon_path":"/assets/typescript-original.svg",
+                "alt_string":"TypeScriptのアイコン"
+            },
+            {
+                "language":"JavaScript",
+                "description":"フロントエンド",
+                "icon_path":"/assets/javascript-original.svg",
+                "alt_string":"JavaScriptのアイコン"
+            },
+            {
+                "language":"Swift",
+                "description":"iPadネイティブアプリ作成",
+                "icon_path":"/assets/swift-original.svg",
+                "alt_string":"Swiftのアイコン"
+            },
+            {
+                "language":"Go",
+                "description":"バックエンド",
+                "icon_path":"/assets/go-original.svg",
+                "alt_string":"Goのアイコン"
+            },
+            {
+                "language":"C++",
+                "description":"学部時代の研究やアルゴリズム構築など",
+                "icon_path":"/assets/cplusplus-original.svg",
+                "alt_string":"C++のアイコン"
+            },
+            {
+                "language":"C",
+                "description":"C++と同様",
+                "icon_path":"/assets/c-original.svg",
+                "alt_string":"Cのアイコン"
             }
         ]
+        
     }
 }

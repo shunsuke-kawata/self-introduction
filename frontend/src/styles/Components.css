@@ -37,7 +37,7 @@
 }
 .main-profile-info{
     color: #AAA;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 12px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .main-profile-links{
-    font-size: 12px;
+    font-size: 16px;
     line-height: 12px;
     color:#3ea6ff;
 }
@@ -126,7 +126,7 @@
     border-bottom: solid 0.5px #AAA;
 }
 .status-change-label{
-    height:22px;
+    height:26px;
     display: inline-block;
     padding: 5px 10px;
     color: #AAA;
@@ -134,9 +134,21 @@
 }
 
 .not-checked-status-change-label:hover{
-    border-bottom: solid 2px #AAA;
+    border-bottom: solid 2px #555555;
 }
 .checked-status{
     color: #F1F1F1;
     border-bottom: solid 2px #F1F1F1;
+}
+.img-and-name{
+    display: flex;
+}
+
+.language-name-label{
+    font-size: 40px;
+}
+
+.stack-icon-img{
+    width: 160px;
+    height:160px;
 }

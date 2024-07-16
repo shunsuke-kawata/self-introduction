@@ -3,6 +3,9 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import ProfileHeader from "./components/ProfileHeader";
+import ProfileList from "./components/ProfileList";
+import StackList from "./components/StackList";
+import DevelopList from "./components/DevelopList";
 
 const statusString: {
   [key in "home" | "profile" | "stack" | "develop"]: string;
@@ -18,7 +21,7 @@ const App: React.FC = () => {
     "home" | "profile" | "stack" | "develop"
   >("home");
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <ProfileHeader />
       <div className="page-status-change-div">
@@ -41,6 +44,17 @@ const App: React.FC = () => {
           </label>
         ))}
       </div>
+      {currentPageStatus === "home" ? (
+        <></>
+      ) : currentPageStatus === "profile" ? (
+        <ProfileList />
+      ) : currentPageStatus === "stack" ? (
+        <StackList />
+      ) : currentPageStatus === "develop" ? (
+        <DevelopList />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

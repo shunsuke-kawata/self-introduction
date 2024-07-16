@@ -69,7 +69,7 @@ const ProfileModal: React.FC<newProfileModalProps> = ({
         <div className="close-button-div" onClick={() => closeProfileModal()}>
           <img
             className="batsu-icon-img"
-            src="/batsu-icon.svg"
+            src="/assets/batsu-icon.svg"
             alt="バツボタン"
           />
         </div>

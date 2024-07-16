@@ -14,7 +14,7 @@ const ProfileHeader: React.FC = () => {
       <div className="profile-header-main">
         <img
           className="profile-img"
-          src="/profile-header-img.png"
+          src={config.main_profile.icon_path}
           alt="ヘッダー用画像"
         />
         <div className="profile-header-info">
