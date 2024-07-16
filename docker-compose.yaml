@@ -5,6 +5,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/app
+    environment:
+      - WATCHPACK_POLLING=true
     ports:
-      - "5004:3000"
+      - "127.0.0.1:5004:3000"
     tty: true

@@ -1,0 +1,96 @@
+.header-main {
+    margin-top:10px;
+    height: 120px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+  
+.header-main img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.profile-header-main{
+    margin-top: 10px;
+    height: 200px;
+    /* background-color: aqua; */
+    display:flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.profile-img{
+    height: 80%;
+    border-radius: 50%;
+}
+
+.profile-header-info{
+    height: 80%;
+    margin-left:30px;
+}
+
+.profile-name{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0px;
+}
+.main-profile-info{
+    color: #AAA;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.more-info-label{
+    color:#F1F1F1;
+}
+
+.main-profile-links{
+    font-size: 12px;
+    line-height: 12px;
+    color:#3ea6ff;
+}
+
+.profile-modal-main{
+    position: fixed;
+    width:400px;
+    height: 740px;
+    padding: 20px;
+    background-color: #212121;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 90000;
+}
+
+.profile-modal-title{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.close-button-div{
+    position:absolute;
+    top:23px;
+    right:15px;
+    width:27px;
+    height:27px;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 子要素を中央に配置 */
+    transition: background-color 0.2s ease; 
+    overflow: hidden;
+}
+.batsu-icon-img{
+    width:80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.close-button-div:hover{
+    background-color: #555555;
+}

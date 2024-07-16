@@ -1,0 +1,12 @@
+{
+    "main_profile":{
+        "name":"川田隼輔",
+        "birthday":"2002/01/17",
+        "university":"佐賀大学大学院",
+        "birthplace":"福岡県",
+        "domain":"@shunsuke-kawata",
+        "links":{
+            "github":"https://github.com/shunsuke-kawata"
+        }
+    }
+}
