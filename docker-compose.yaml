@@ -1,0 +1,9 @@
+services:
+  self-intro-app:
+    build:
+      context: .
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5004:3000"
+    tty: true
