@@ -1,12 +1,36 @@
 {
     "main_profile":{
-        "name":"川田隼輔",
+        "name":"川田　隼輔",
+        "name_kana":"かわた　しゅんすけ",
+        "name_en":"shunsuke kawata",
         "birthday":"2002/01/17",
-        "university":"佐賀大学大学院",
+        "age":22,
         "birthplace":"福岡県",
-        "domain":"@shunsuke-kawata",
-        "links":{
-            "github":"https://github.com/shunsuke-kawata"
-        }
+        "university":"佐賀大学大学院",
+        "majoring":"知能情報工学",
+        "links":[
+            {
+                "name":"github",
+                "url":"https://github.com/shunsuke-kawata",
+                "icon_path":"/github-original.svg",
+                "alt_string":"githubのアイコン"
+            }
+        ],
+        "hobbies":["ライブ参加","カラオケ","音楽を聴く"],
+        "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN"],
+        "favorite_comedians":["ジャルジャル","さらば青春の光"],
+        "favorite_idles":["日向坂46","櫻坂46","乃木坂46"],
+        "respect_people":["野田洋次郎","川谷絵音","小坂菜緒"],
+        "using_languages":["Python","TypeScript","JavaScript","Swift","Golang","C++","C"]
+    },
+    "main_stacks":{
+        "programming_languages":[
+            {
+                "language":"Python",
+                "description":"データ処理やバックエンド、機械学習など",
+                "icon_path":"",
+                "alt_string":"Pythonのアイコン"
+            }
+        ]
     }
 }

@@ -20,11 +20,10 @@ const ProfileHeader: React.FC = () => {
         <div className="profile-header-info">
           <p className="profile-name">{config.main_profile.name}</p>
           <p className="main-profile-info">
-            {config.main_profile.domain}・{config.main_profile.birthday}・
-            {config.main_profile.birthplace}出身
+            @{config.main_profile.name_en}・{config.main_profile.name_kana}
           </p>
           <p className="main-profile-info">
-            所属：{config.main_profile.university}
+            名前：{config.main_profile.name}
             <label
               className="more-info-label"
               onClick={() => openProfileModal()}
@@ -34,10 +33,11 @@ const ProfileHeader: React.FC = () => {
           </p>
           <a
             className="main-profile-links"
-            href="https://github.com/shunsuke-kawata"
+            href={config.main_profile.links[0].url}
             target="_blank"
+            rel="noreferrer"
           >
-            https://github.com/shunsuke-kawata
+            {config.main_profile.links[0].url}
           </a>
         </div>
       </div>

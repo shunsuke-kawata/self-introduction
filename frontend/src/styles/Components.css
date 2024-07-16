@@ -15,10 +15,9 @@
 .profile-header-main{
     margin-top: 10px;
     height: 200px;
-    /* background-color: aqua; */
     display:flex;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 40px;
 }
 
 .profile-img{
@@ -55,7 +54,7 @@
 .profile-modal-main{
     position: fixed;
     width:400px;
-    height: 740px;
+    height: 600px;
     padding: 20px;
     background-color: #212121;
     border-radius: 15px;
@@ -66,7 +65,7 @@
 }
 
 .profile-modal-title{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 0px;
 }
@@ -81,7 +80,7 @@
     padding: 6px;
     display: flex;
     align-items: center;
-    justify-content: center; /* 子要素を中央に配置 */
+    justify-content: center;
     transition: background-color 0.2s ease; 
     overflow: hidden;
 }
@@ -93,4 +92,51 @@
 
 .close-button-div:hover{
     background-color: #555555;
+}
+
+.profile-modal-info{
+    font-size: 14px;
+    line-height: 8px;
+}
+.profile-item-name{
+    min-width:60px;
+    display: inline-block;
+}
+.info-div{
+    margin:40px 0px;
+}
+.icons-img{
+    width: 40px;
+    height:40px;
+    margin-right: 10px;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+}
+.urls-div{
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+}
+.links-label{
+    line-height: 0px;
+}
+.page-status-change-div{
+    display: flex;
+    margin-left:30px;
+    border-bottom: solid 0.5px #AAA;
+}
+.status-change-label{
+    height:22px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+.not-checked-status-change-label:hover{
+    border-bottom: solid 2px #AAA;
+}
+.checked-status{
+    color: #F1F1F1;
+    border-bottom: solid 2px #F1F1F1;
 }
