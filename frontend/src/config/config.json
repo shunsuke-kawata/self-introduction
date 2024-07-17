@@ -103,7 +103,80 @@
                 "alt_string":"Rubyのアイコン",
                 "my_score":1
             }
-            
+        ],
+        "programming_frameworks":[
+            {
+                "language":"React",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/react-original.svg",
+                "alt_string":"Reactのアイコン",
+                "my_score":4
+            },
+            {
+                "language":"Next",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/nextjs-original.svg",
+                "alt_string":"nextのアイコン",
+                "my_score":4
+            },
+            {
+                "language":"Vue",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/vuejs-original.svg",
+                "alt_string":"Vueのアイコン",
+                "my_score":4
+            },
+            {
+                "language":"Angular",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/angular-original.svg",
+                "alt_string":"Angularのアイコン",
+                "my_score":2
+            },
+            {
+                "language":"Rails",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/rails-original.svg",
+                "alt_string":"Railsのアイコン",
+                "my_score":1
+            },
+            {
+                "language":"FastAPI",
+                "description":"バックエンド開発",
+                "icon_path":"/assets/fastapi-original.svg",
+                "alt_string":"FastAPIのアイコン",
+                "my_score":5
+            },
+            {
+                "language":"Flask",
+                "description":"バックエンド開発",
+                "icon_path":"/assets/flask-original.svg",
+                "alt_string":"Flaskのアイコン",
+                "my_score":4
+            }
+        ],
+        "programming_others":[
+            {
+                "language":"Docker",
+                "description":"環境構築、アプリケーション起動など",
+                "icon_path":"/assets/docker-original.svg",
+                "alt_string":"Dockerのアイコン",
+                "my_score":3
+            },
+            {
+                "language":"MySQL",
+                "description":"データベース",
+                "icon_path":"/assets/mysql-original.svg",
+                "alt_string":"MySQLのアイコン",
+                "my_score":2
+            },
+            {
+                "language":"Firebase",
+                "description":"BaaS,ストレージなど",
+                "icon_path":"/assets/firebase-original.svg",
+                "alt_string":"Firebaseのアイコン",
+                "my_score":2
+            }
         ]
         
     }

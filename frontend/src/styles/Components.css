@@ -122,13 +122,13 @@
 }
 .page-status-change-div{
     display: flex;
-    margin-left:30px;
     border-bottom: solid 0.5px #AAA;
 }
 .status-change-label{
-    height:26px;
+    height:30px;
+    font-size: 20px;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 6px 10px;
     color: #AAA;
     margin-right: 10px;
 }
@@ -168,7 +168,8 @@
 .stack-info-div {
 height: 160px;
 border: solid 1px #AAA;
-box-sizing: border-box; /* paddingやborderのサイズを含めて幅を計算 */
+box-sizing: border-box;
+border-radius: 2px;
 }
 
 .img-and-name {
@@ -179,23 +180,22 @@ align-items: center;
 }
 
 .stack-icon-img {
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 margin: 0px 10px;
 }
 
 .language-name-label {
-font-size: 26px;
+font-size: 18px;
 }
 
 .language-desc {
 overflow-wrap: break-word;
-width: 95%;
-margin-top: 10px;
-margin-left: 10px;
+width: fit-content;
+margin: 10px;
 }
 .stacks-division-title{
-    font-size: 26px;
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
