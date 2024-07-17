@@ -28,53 +28,82 @@
         "programming_languages":[
             {
                 "language":"Python",
-                "description":"データ処理やバックエンド、機械学習など",
+                "description":"データ処理やバックエンド開発、機械学習、デスクトップアプリ開発など",
                 "icon_path":"/assets/python-original.svg",
                 "alt_string":"Pythonのアイコン",
-                "related_tech":[
-                    {
-                        "language":"Python",
-                        "icon_path":"/assets/python-original.svg",
-                        "alt_string":"Pythonのアイコン"
-                    }
-                ]
+                "my_score":5
             },
             {
                 "language":"TypeScript",
-                "description":"フロントエンド",
+                "description":"フロントエンド開発",
                 "icon_path":"/assets/typescript-original.svg",
-                "alt_string":"TypeScriptのアイコン"
+                "alt_string":"TypeScriptのアイコン",
+                "my_score":4
             },
             {
                 "language":"JavaScript",
-                "description":"フロントエンド",
+                "description":"フロントエンド開発",
                 "icon_path":"/assets/javascript-original.svg",
-                "alt_string":"JavaScriptのアイコン"
+                "alt_string":"JavaScriptのアイコン",
+                "my_score":4
             },
             {
                 "language":"Swift",
                 "description":"iPadネイティブアプリ作成",
                 "icon_path":"/assets/swift-original.svg",
-                "alt_string":"Swiftのアイコン"
+                "alt_string":"Swiftのアイコン",
+                "my_score":3
             },
             {
                 "language":"Go",
-                "description":"バックエンド",
+                "description":"バックエンド開発",
                 "icon_path":"/assets/go-original.svg",
-                "alt_string":"Goのアイコン"
+                "alt_string":"Goのアイコン",
+                "my_score":3
             },
             {
                 "language":"C++",
-                "description":"学部時代の研究やアルゴリズム構築など",
+                "description":"学部時代の研究(SLAM)やコーディング試験など",
                 "icon_path":"/assets/cplusplus-original.svg",
-                "alt_string":"C++のアイコン"
+                "alt_string":"C++のアイコン",
+                "my_score":3
             },
             {
                 "language":"C",
                 "description":"C++と同様",
                 "icon_path":"/assets/c-original.svg",
-                "alt_string":"Cのアイコン"
+                "alt_string":"Cのアイコン",
+                "my_score":2
+            },
+            {
+                "language":"C#",
+                "description":"デスクトップアプリ開発",
+                "icon_path":"/assets/csharp-original.svg",
+                "alt_string":"C#のアイコン",
+                "my_score":1
+            },
+            {
+                "language":"HTML",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/html5-original.svg",
+                "alt_string":"HTMLのアイコン",
+                "my_score":3
+            },
+            {
+                "language":"CSS",
+                "description":"フロントエンド開発",
+                "icon_path":"/assets/css3-original.svg",
+                "alt_string":"CSSのアイコン",
+                "my_score":3
+            },
+            {
+                "language":"Ruby",
+                "description":"バックエンド開発",
+                "icon_path":"/assets/ruby-original.svg",
+                "alt_string":"Rubyのアイコン",
+                "my_score":1
             }
+            
         ]
         
     }

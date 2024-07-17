@@ -141,14 +141,72 @@
     border-bottom: solid 2px #F1F1F1;
 }
 .img-and-name{
+    margin-top: 10px;
     display: flex;
+    justify-content: left; 
+    align-items: center;
 }
 
 .language-name-label{
-    font-size: 40px;
+    font-size: 26px;
+    width: fit-content;
 }
 
 .stack-icon-img{
-    width: 160px;
-    height:160px;
+    width: 50px;
+    height:50px;
+    width: fit-content;
+    margin: 0px 10px;
 }
+
+.stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 要素の大きさを固定 */
+    gap: 16px; /* 要素間のスペースを調整 */
+  }
+  
+.stack-info-div {
+height: 160px;
+border: solid 1px #AAA;
+box-sizing: border-box; /* paddingやborderのサイズを含めて幅を計算 */
+}
+
+.img-and-name {
+margin-top: 10px;
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.stack-icon-img {
+width: 50px;
+height: 50px;
+margin: 0px 10px;
+}
+
+.language-name-label {
+font-size: 26px;
+}
+
+.language-desc {
+overflow-wrap: break-word;
+width: 95%;
+margin-top: 10px;
+margin-left: 10px;
+}
+.stacks-division-title{
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+.stack-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 小さいスクリーンでは幅を少し小さくする */
+}
+}
+
+@media (max-width: 480px) {
+.stack-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
+}
+}
+  
