@@ -16,13 +16,17 @@
                 "alt_string":"githubのアイコン"
             }
         ],
-        "icon_path":"/assets/profile-header-img.png",
+        "my_icon":{
+            "name":"header",
+            "icon_path":"/assets/profile-header-img.png",
+            "alt_string":"自分のアイコン"
+        },
         "hobbies":["ライブ参加","カラオケ","音楽を聴く"],
-        "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN"],
-        "favorite_comedians":["ジャルジャル","さらば青春の光"],
+        "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN","美的計画"],
+        "favorite_comedians":["ジャルジャル","さらば青春の光","かまいたち","東京03"],
         "favorite_idles":["日向坂46","櫻坂46","乃木坂46"],
         "respect_people":["野田洋次郎","川谷絵音","小坂菜緒"],
-        "using_languages":["Python","TypeScript","JavaScript","Swift","Golang","C++","C"]
+        "favorite_languages":["Python","TypeScript","JavaScript"]
     },
     "main_stacks":{
         "programming_languages":[
@@ -178,6 +182,5 @@
                 "my_score":2
             }
         ]
-        
     }
 }

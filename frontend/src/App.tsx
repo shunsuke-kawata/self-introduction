@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import ProfileHeader from "./components/ProfileHeader";
+import HomeList from "./components/HomeList";
 import ProfileList from "./components/ProfileList";
 import StackList from "./components/StackList";
 import DevelopList from "./components/DevelopList";
@@ -45,7 +46,7 @@ const App: React.FC = () => {
         ))}
       </div>
       {currentPageStatus === "home" ? (
-        <></>
+        <HomeList />
       ) : currentPageStatus === "profile" ? (
         <ProfileList />
       ) : currentPageStatus === "stack" ? (

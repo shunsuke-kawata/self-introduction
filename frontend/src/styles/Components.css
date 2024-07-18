@@ -99,8 +99,18 @@
     line-height: 8px;
 }
 .profile-item-name{
-    min-width:60px;
+    min-width:50px;
     display: inline-block;
+}
+
+.profile-section-item-name{
+    min-width:150px;
+    display: inline-block;
+}
+
+.profile-item-value {
+  flex: 1;
+  word-break: break-word; /* 長い単語が折り返されるようにする */
 }
 .info-div{
     margin:40px 0px;
@@ -196,6 +206,20 @@ margin: 10px;
 }
 .stacks-division-title{
     font-size: 20px;
+}
+
+.profile-stack-container{
+
+}
+
+.profile-section{
+
+}
+
+.profile-section-info{
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-start;
 }
 
 @media (max-width: 768px) {

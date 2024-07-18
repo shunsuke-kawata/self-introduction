@@ -17,27 +17,33 @@ const ProfileModal: React.FC<newProfileModalProps> = ({
         <div className="info-div">
           <p className="profile-modal-info">
             <span className="profile-item-name">名前</span>：
-            {config.main_profile.name} （{config.main_profile.name_kana}）
+            <span className="profile-item-value">
+              {config.main_profile.name} （{config.main_profile.name_kana}）
+            </span>
           </p>
           <p className="profile-modal-info">
             <span className="profile-item-name">誕生日</span>：
-            {config.main_profile.birthday} （{config.main_profile.age}歳）
+            <span className="profile-item-value">
+              {config.main_profile.birthday} （{config.main_profile.age}歳）
+            </span>
           </p>
           <p className="profile-modal-info">
             <span className="profile-item-name">出身</span>：
-            {config.main_profile.birthplace}
+            <span className="profile-item-value">
+              {config.main_profile.birthplace}
+            </span>
           </p>
           <p className="profile-modal-info">
             <span className="profile-item-name">所属</span>：
-            {config.main_profile.university}
-          </p>
-          <p className="profile-modal-info">
-            <span className="profile-item-name">専攻</span>：
-            {config.main_profile.majoring}
+            <span className="profile-item-value">
+              {config.main_profile.university}
+            </span>
           </p>
           <p className="profile-modal-info">
             <span className="profile-item-name">趣味</span>：
-            {config.main_profile.hobbies.join("、")}
+            <span className="profile-item-value">
+              {config.main_profile.hobbies.join("、")}
+            </span>
           </p>
         </div>
         <p className="profile-modal-title">リンク</p>
