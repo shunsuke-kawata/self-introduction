@@ -26,7 +26,8 @@
         "favorite_comedians":["ジャルジャル","さらば青春の光","かまいたち","東京03"],
         "favorite_idles":["日向坂46","櫻坂46","乃木坂46"],
         "respect_people":["野田洋次郎","川谷絵音","小坂菜緒"],
-        "favorite_languages":["Python","TypeScript","JavaScript"]
+        "favorite_languages":["Python","TypeScript","JavaScript"],
+        "favorite_techniques":["Docker","Next","Firebase"]
     },
     "main_stacks":{
         "programming_languages":[
@@ -139,7 +140,7 @@
             },
             {
                 "language":"Rails",
-                "description":"フロントエンド開発",
+                "description":"バックエンド開発",
                 "icon_path":"/assets/rails-original.svg",
                 "alt_string":"Railsのアイコン",
                 "my_score":1
@@ -169,10 +170,17 @@
             },
             {
                 "language":"MySQL",
-                "description":"データベース",
+                "description":"データベース構築",
                 "icon_path":"/assets/mysql-original.svg",
                 "alt_string":"MySQLのアイコン",
                 "my_score":2
+            },
+            {
+                "language":"PostgreSQL",
+                "description":"データベース構築",
+                "icon_path":"/assets/postgresql-original.svg",
+                "alt_string":"PostgreSQLのアイコン",
+                "my_score":1
             },
             {
                 "language":"Firebase",
@@ -180,7 +188,66 @@
                 "icon_path":"/assets/firebase-original.svg",
                 "alt_string":"Firebaseのアイコン",
                 "my_score":2
+            },
+            {
+                "language":" OAuth",
+                "description":"デスクトップアプリに認証機能を追加",
+                "icon_path":"/assets/oauth-original.svg",
+                "alt_string":"OAuthのアイコン",
+                "my_score":2
+            }
+        ],
+        "using_os":[
+            {
+                "language":" MacOS",
+                "description":"個人開発・日常で使用",
+                "icon_path":"/assets/mac-original.svg",
+                "alt_string":"Macのアイコン",
+                "my_score":4
+            },
+            {
+                "language":"LinuxOS",
+                "description":"アルバイトや研究でWSLやUbuntuを使用",
+                "icon_path":"/assets/linux-original.svg",
+                "alt_string":"Linuxのアイコン",
+                "my_score":3
+            },
+            {
+                "language":"WindowOS",
+                "description":"日常で使用",
+                "icon_path":"/assets/windows11-original.svg",
+                "alt_string":"Windows11のアイコン",
+                "my_score":2
+            }
+        ]
+    },
+    "main_experiense":{
+        "parttime_jobs":[
+            {
+                "workplace":"株式会社OPTiM",
+                "url":"https://www.optim.co.jp/",
+                "start_date":"2022/08",
+                "using_techniques":["Python","FastAPI","Flask","JavaScript","HTML","CSS","Vue","Angular","React","Ruby","Rails","SQL","MySQL","PostgreSQL","Docker","AWS"],
+                "main_contents":[
+                    "データ・画像の処理スクリプト作成",
+                    "プラットフォームフロントエンド開発",
+                    "作物予測AI作成",
+                    "デスクトップアプリの作成・開発管理",
+                    "EC2スクレイピングサーバ作成",
+                    "Lambdaスクリプトの作成"
+                ]
+            },
+            {
+                "workplace":"佐賀大学中山研究室",
+                "url":"https://www.fu.is.saga-u.ac.jp/nakalab/",
+                "start_date":"2022/09",
+                "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase"],
+                "main_contents":[
+                    "iPadサッカースコア管理アプリ作成",
+                    "スコアリアルタイム配信アプリ作成"
+                ]  
             }
         ]
     }
+
 }

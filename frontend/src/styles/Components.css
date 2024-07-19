@@ -176,7 +176,7 @@
   }
   
 .stack-info-div {
-height: 160px;
+min-height: 160px;
 border: solid 1px #AAA;
 box-sizing: border-box;
 border-radius: 2px;
@@ -206,6 +206,7 @@ margin: 10px;
 }
 .stacks-division-title{
     font-size: 20px;
+    border-bottom: solid 1px#AAA;
 }
 
 .profile-stack-container{

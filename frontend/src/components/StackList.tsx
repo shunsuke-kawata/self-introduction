@@ -72,6 +72,27 @@ const StackList = () => {
           )
         )}
       </div>
+      <p className="stacks-division-title">OS</p>
+      <div className="stack-container">
+        {config.main_stacks.using_os.map((using_os_element, index) => (
+          <div key={index} className="stack-info-div">
+            <div className="img-and-name">
+              <img
+                className="stack-icon-img"
+                src={using_os_element.icon_path}
+                alt={using_os_element.alt_string}
+              />
+              <label className="language-name-label">
+                {using_os_element.language}　☆
+                {using_os_element.my_score}
+              </label>
+            </div>
+            <div className="language-desc">
+              <label>{using_os_element.description}</label>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

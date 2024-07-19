@@ -1,5 +1,9 @@
 const DevelopList = () => {
-  return <>developList</>;
+  return (
+    <>
+      <p className="stacks-division-title">アルバイト</p>
+    </>
+  );
 };
 
 export default DevelopList;

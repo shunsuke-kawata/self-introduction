@@ -72,6 +72,18 @@ const ProfileList = () => {
               {config.main_profile.respect_people.join("、")}
             </span>
           </p>
+          <p className="profile-section-info">
+            <span className="profile-section-item-name">よく使う言語</span>：
+            <span className="profile-item-value">
+              {config.main_profile.favorite_languages.join("、")}
+            </span>
+          </p>
+          <p className="profile-section-info">
+            <span className="profile-section-item-name">よく使う技術</span>：
+            <span className="profile-item-value">
+              {config.main_profile.favorite_techniques.join("、")}
+            </span>
+          </p>
         </div>
       </div>
     </>
