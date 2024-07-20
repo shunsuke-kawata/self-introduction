@@ -244,8 +244,17 @@
                 "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase"],
                 "main_contents":[
                     "iPadサッカースコア管理アプリ作成",
-                    "スコアリアルタイム配信アプリ作成"
+                    "スコアリアルタイム配信アプリ作成",
+                    "サーバの証明書更新などの管理"
                 ]  
+            }
+        ],
+        "hackathons":[
+            {
+                "title":"ハックツハッカソン　プテラカップ",
+                "date":"",
+                "product":"",
+                "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase"]
             }
         ]
     }

@@ -104,13 +104,13 @@
 }
 
 .profile-section-item-name{
-    min-width:150px;
+    min-width:160px;
     display: inline-block;
 }
 
 .profile-item-value {
   flex: 1;
-  word-break: break-word; /* 長い単語が折り返されるようにする */
+  word-break: break-word;
 }
 .info-div{
     margin:40px 0px;
@@ -216,11 +216,31 @@ margin: 10px;
 .profile-section{
 
 }
+.parttime-title{
+    font-size: 20px;
+}
 
+.parttile-links{
+    color:#3ea6ff;
+}
 .profile-section-info{
     margin-left: 30px;
     display: flex;
     align-items: flex-start;
+    font-size: 18px;
+}
+
+.experience-info{
+    font-size: 18px;
+}
+
+.main-content-list{
+    margin: 0;
+    padding-left: 0;
+}
+
+.job-li{
+    list-style:none;
 }
 
 @media (max-width: 768px) {
