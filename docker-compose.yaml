@@ -6,5 +6,5 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "127.0.0.1:5004:3000"
+      - "5004:3000"
     tty: true

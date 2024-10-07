@@ -195,6 +195,13 @@
                 "icon_path":"/assets/oauth-original.svg",
                 "alt_string":"OAuthのアイコン",
                 "my_score":2
+            },
+            {
+                "language":"Raspberry Pi",
+                "description":"Pythonで組み込みシステム作成",
+                "icon_path":"/assets/raspberrypi-original.svg",
+                "alt_string":"Raspberry Piのアイコン",
+                "my_score":2
             }
         ],
         "using_os":[
@@ -234,7 +241,8 @@
                     "作物予測AI作成",
                     "デスクトップアプリの作成・開発管理",
                     "EC2スクレイピングサーバ作成",
-                    "Lambdaスクリプトの作成"
+                    "Lambdaスクリプトの作成",
+                    "ラズパイ・ESP32などで組み込みシステム・サーバ作成"
                 ]
             },
             {

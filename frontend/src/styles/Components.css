@@ -1,24 +1,64 @@
 .header-main {
-    margin-top:10px;
-    height: 120px;
+    height: 200px;
+    width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+    overflow: hidden; /* 親要素のオーバーフローを隠す */
 }
-  
+
 .header-main img {
     max-height: 100%;
-    width: auto;
-    object-fit: contain;
+    width: auto; /* 親要素に対して幅は自動で調整 */
+    height: auto; /* 画像比率を保つ */
+    object-fit: contain; /* 画像が親要素に収まる */
 }
 
 .profile-header-main{
-    margin-top: 10px;
-    height: 200px;
+    height: 300px;
     display:flex;
     align-items: center;
     padding: 0px 40px;
+    background-color: red;
 }
+
+@media(max-width:768px) {
+    .stack-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 小さいスクリーンでは幅を少し小さくする */
+    }
+
+    .header-main {
+        height: 200px;
+    }
+    .profile-header-main{
+        height: 180px;
+    }
+}
+
+@media(max-width:540px) {
+    .header-main {
+        height: 160px;
+    }
+    .profile-header-main{
+        height: 160px;
+    }
+    
+}
+
+@media(max-width: 400px) {
+    .stack-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
+    }
+    .header-main {
+        height: 140px;
+    }
+
+    .profile-header-main{
+        height: 140px;
+    }
+  
+}
+
 
 .profile-img{
     height: 80%;
@@ -243,15 +283,4 @@ margin: 10px;
     list-style:none;
 }
 
-@media (max-width: 768px) {
-.stack-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 小さいスクリーンでは幅を少し小さくする */
-}
-}
-
-@media (max-width: 480px) {
-.stack-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
-}
-}
   
