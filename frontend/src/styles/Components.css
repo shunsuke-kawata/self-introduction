@@ -19,7 +19,6 @@
     display:flex;
     align-items: center;
     padding: 0px 40px;
-    background-color: red;
 }
 
 @media(max-width:768px) {
@@ -35,9 +34,9 @@
     }
 }
 
-@media(max-width:540px) {
+@media(max-width:650px) {
     .header-main {
-        height: 160px;
+        height: 180px;
     }
     .profile-header-main{
         height: 160px;
@@ -45,44 +44,24 @@
     
 }
 
-@media(max-width: 400px) {
-    .stack-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
-    }
-    .header-main {
-        height: 140px;
-    }
-
-    .profile-header-main{
-        height: 140px;
-    }
-  
+.stacks-division-title{
+    font-size: 20px;
+    border-bottom: solid 1px#AAA;
 }
 
-
-.profile-img{
-    height: 80%;
-    border-radius: 50%;
-}
-
-.profile-header-info{
-    height: 80%;
-    margin-left:30px;
-}
-
-.profile-name{
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 0px;
-}
 .main-profile-info{
     color: #AAA;
     font-size: 16px;
     line-height: 12px;
 }
-
-.more-info-label{
-    color:#F1F1F1;
+.profile-name{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0px;
+}
+.profile-img{
+    height: 80%;
+    border-radius: 50%;
 }
 
 .main-profile-links{
@@ -90,6 +69,17 @@
     line-height: 12px;
     color:#3ea6ff;
 }
+
+.profile-header-info{
+    height: 80%;
+    margin-left:30px;
+}
+
+
+.more-info-label{
+    color:#F1F1F1;
+}
+
 
 .profile-modal-main{
     position: fixed;
@@ -183,6 +173,67 @@
     margin-right: 10px;
 }
 
+@media (max-width:550px) {
+
+    .status-change-label{
+        height:21px;
+        font-size: 14px;
+        display: inline-block;
+        padding: 6px 6px;
+    }
+
+    .main-profile-info{
+        font-size: 14px;
+    }
+
+    .profile-name{
+        font-size: 20px;
+    }
+    .main-profile-links{
+        font-size: 14px;
+    }
+    .stacks-division-title{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .profile-header-main{
+        height: 140px;
+        padding: 0px 2px;
+    }
+
+    .stack-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
+    }
+
+    .profile-img{
+        height:60%;
+    }
+
+    .status-change-label{
+        height:21px;
+        font-size: 12px;
+        display: inline-block;
+        padding: 3px 3px;
+    }
+
+    .main-profile-info{
+        font-size: 12px;
+    }
+
+    .profile-name{
+        font-size: 16px;
+    }
+    .main-profile-links{
+        font-size: 12px;
+    }
+    .stacks-division-title{
+        font-size: 12px;
+    }
+}
+
 .not-checked-status-change-label:hover{
     border-bottom: solid 2px #555555;
 }
@@ -244,10 +295,7 @@ overflow-wrap: break-word;
 width: fit-content;
 margin: 10px;
 }
-.stacks-division-title{
-    font-size: 20px;
-    border-bottom: solid 1px#AAA;
-}
+
 
 .profile-stack-container{
 

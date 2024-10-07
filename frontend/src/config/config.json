@@ -64,7 +64,7 @@
                 "description":"バックエンド開発",
                 "icon_path":"/assets/go-original.svg",
                 "alt_string":"Goのアイコン",
-                "my_score":3
+                "my_score":1
             },
             {
                 "language":"C++",

@@ -5,7 +5,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color:#F1F1F1;
   background-color: #141414; 
-  /* background-color: #FFFFFF; */
+  min-width: 375px;
+
 }
 
 code {
@@ -16,3 +17,4 @@ code {
 a{
   text-decoration: none;
 }
+
