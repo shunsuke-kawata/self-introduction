@@ -173,66 +173,72 @@
     margin-right: 10px;
 }
 
-@media (max-width:550px) {
+.language-name-label {
+font-size: 18px;
+}
 
-    .status-change-label{
-        height:21px;
+@media (max-width: 550px) {
+    .status-change-label,
+    .main-profile-info,
+    .main-profile-links,
+    .stacks-division-title,
+    .section-info span,
+    .parttime-title span,
+    .parttime-title a ,
+    .language-name-label,
+    .language-desc label,
+    .img-and-name label{
         font-size: 14px;
+    }
+
+    .status-change-label {
+        height: 21px;
         display: inline-block;
         padding: 6px 6px;
     }
 
-    .main-profile-info{
-        font-size: 14px;
-    }
-
-    .profile-name{
+    .profile-name {
         font-size: 20px;
-    }
-    .main-profile-links{
-        font-size: 14px;
-    }
-    .stacks-division-title{
-        font-size: 14px;
     }
 }
 
-@media (max-width:400px) {
-
-    .profile-header-main{
+@media (max-width: 400px) {
+    .profile-header-main {
         height: 140px;
         padding: 0px 2px;
     }
 
     .stack-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* さらに小さいスクリーンでは幅をさらに小さくする */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    .profile-img{
-        height:60%;
+    .profile-img {
+        height: 60%;
     }
 
-    .status-change-label{
-        height:21px;
-        font-size: 12px;
-        display: inline-block;
+    .status-change-label,
+    .main-profile-info,
+    .main-profile-links,
+    .stacks-division-title,
+    .section-info span,
+    .parttime-title span,
+    .parttime-title a ,
+    .language-name-label,
+    .language-desc label,
+    .img-and-name label{
+        font-size: 14px;
+    }
+
+    .status-change-label {
+        height: 21px;
         padding: 3px 3px;
     }
 
-    .main-profile-info{
-        font-size: 12px;
-    }
-
-    .profile-name{
+    .profile-name {
         font-size: 16px;
     }
-    .main-profile-links{
-        font-size: 12px;
-    }
-    .stacks-division-title{
-        font-size: 12px;
-    }
 }
+
 
 .not-checked-status-change-label:hover{
     border-bottom: solid 2px #555555;
@@ -249,7 +255,6 @@
 }
 
 .language-name-label{
-    font-size: 26px;
     width: fit-content;
 }
 
@@ -286,9 +291,6 @@ height: 40px;
 margin: 0px 10px;
 }
 
-.language-name-label {
-font-size: 18px;
-}
 
 .language-desc {
 overflow-wrap: break-word;
@@ -297,13 +299,6 @@ margin: 10px;
 }
 
 
-.profile-stack-container{
-
-}
-
-.profile-section{
-
-}
 .parttime-title{
     font-size: 20px;
 }
@@ -311,7 +306,7 @@ margin: 10px;
 .parttile-links{
     color:#3ea6ff;
 }
-.profile-section-info{
+.section-info{
     margin-left: 30px;
     display: flex;
     align-items: flex-start;

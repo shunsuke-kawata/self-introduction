@@ -1,6 +1,6 @@
 import config from "../config/config.json";
 
-const StackList = () => {
+const StackList: React.FC = () => {
   return (
     <>
       <p className="stacks-division-title">プログラミング言語</p>
@@ -20,7 +20,7 @@ const StackList = () => {
                 </label>
               </div>
               <div className="language-desc">
-                {programming_language.description}
+                <label>{programming_language.description}</label>
               </div>
             </div>
           )

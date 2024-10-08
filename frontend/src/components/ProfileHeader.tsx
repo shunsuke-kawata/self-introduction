@@ -62,7 +62,7 @@ const ProfileHeader: React.FC = () => {
                 所属：{config.main_profile.majoring}
               </p>
               <p className="main-profile-info">
-                趣味：{config.main_profile.hobbies}
+                趣味：{config.main_profile.hobbies.join("、")}
               </p>
             </>
           ) : (

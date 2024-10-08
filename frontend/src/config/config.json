@@ -234,7 +234,7 @@
                 "workplace":"株式会社OPTiM",
                 "url":"https://www.optim.co.jp/",
                 "start_date":"2022/08",
-                "using_techniques":["Python","FastAPI","Flask","JavaScript","HTML","CSS","Vue","Angular","React","Ruby","Rails","SQL","MySQL","PostgreSQL","Docker","AWS"],
+                "using_techniques":["Python","FastAPI","Flask","JavaScript","HTML","CSS","Vue","Angular","React","Ruby","Rails","SQL","MySQL","PostgreSQL","Docker","AWS","C++","Paspberry Pi"],
                 "main_contents":[
                     "データ・画像の処理スクリプト作成",
                     "プラットフォームフロントエンド開発",
@@ -253,7 +253,8 @@
                 "main_contents":[
                     "iPadサッカースコア管理アプリ作成",
                     "スコアリアルタイム配信アプリ作成",
-                    "サーバの証明書更新などの管理"
+                    "サーバの証明書更新などの管理",
+                    "AWSアカウント発行管理"
                 ]  
             }
         ],
