@@ -3,7 +3,7 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="header-main">
-        <img src="/assets/header-img.png" alt="ヘッダー用画像" />
+        {/* <img src="/assets/header-img.png" alt="ヘッダー用画像" /> */}
       </div>
     </>
   );
