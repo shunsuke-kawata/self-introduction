@@ -22,6 +22,12 @@
     padding: 0px 40px;
 }
 
+.modal-profile-links{
+    font-size: 14px;
+    line-height: 12px;
+    color:#3ea6ff;
+}
+
 
 .stacks-division-title{
     font-size: 20px;
@@ -260,6 +266,31 @@ margin: 10px;
     }
 }
 
+@media(max-width:680px) {
+    .header-main {
+        height: 180px;
+    }
+    .profile-header-main{
+        height: 160px;
+    }
+
+    .status-change-label,
+    .main-profile-info,
+    .main-profile-links,
+    .stacks-division-title,
+    .section-info span,
+    .parttime-title span,
+    .parttime-title a ,
+    .language-name-label,
+    .language-desc label,
+    .img-and-name label,
+    .experience-info,
+    .section-info{
+        font-size: 17px;
+    }
+    
+}
+
 @media(max-width:650px) {
     .header-main {
         height: 180px;
@@ -284,7 +315,6 @@ margin: 10px;
     }
     
 }
-
 
 @media (max-width: 560px) {
     .status-change-label,

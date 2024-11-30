@@ -3,15 +3,13 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import ProfileHeader from "./components/ProfileHeader";
-import HomeList from "./components/HomeList";
 import ProfileList from "./components/ProfileList";
 import StackList from "./components/StackList";
 import DevelopList from "./components/DevelopList";
 
 const statusString: {
-  [key in "home" | "profile" | "stack" | "develop"]: string;
+  [key in "profile" | "stack" | "develop"]: string;
 } = {
-  home: "ホーム",
   profile: "プロフィール",
   stack: "技術スタック",
   develop: "開発経験",
@@ -19,8 +17,8 @@ const statusString: {
 
 const App: React.FC = () => {
   const [currentPageStatus, setCurrentPageStatus] = useState<
-    "home" | "profile" | "stack" | "develop"
-  >("home");
+    "profile" | "stack" | "develop"
+  >("profile");
   return (
     <div className="app">
       <Header />
@@ -36,18 +34,14 @@ const App: React.FC = () => {
                 : "not-checked-status-change-label"
             }`}
             onClick={() =>
-              setCurrentPageStatus(
-                key as "home" | "profile" | "stack" | "develop"
-              )
+              setCurrentPageStatus(key as "profile" | "stack" | "develop")
             }
           >
             {value}
           </label>
         ))}
       </div>
-      {currentPageStatus === "home" ? (
-        <HomeList />
-      ) : currentPageStatus === "profile" ? (
+      {currentPageStatus === "profile" ? (
         <ProfileList />
       ) : currentPageStatus === "stack" ? (
         <StackList />

@@ -40,27 +40,37 @@ const ProfileModal: React.FC<newProfileModalProps> = ({
             </span>
           </p>
           <p className="profile-modal-info">
+            <span className="profile-item-name">専攻</span>：
+            <span className="profile-item-value">
+              {config.main_profile.majoring}
+            </span>
+          </p>
+          <p className="profile-modal-info">
             <span className="profile-item-name">趣味</span>：
             <span className="profile-item-value">
               {config.main_profile.hobbies.join("、")}
+            </span>
+          </p>
+          <p className="profile-modal-info">
+            <span className="profile-item-name">一言</span>：
+            <span className="profile-item-value">
+              {config.main_profile.comment}
             </span>
           </p>
         </div>
         <p className="profile-modal-title">リンク</p>
         <div className="info-div">
           {config.main_profile.links.map((linkItem, index) => (
-            <div className="urls-div">
+            <div className="urls-div" key={index}>
               <img
                 className="icons-img"
                 src={linkItem.icon_path}
                 alt={linkItem.alt_string}
               />
               <div>
-                <p className="profile-modal-info links-label">
-                  {linkItem.name}
-                </p>
+                <p className="profile-modal-info">{linkItem.name}</p>
                 <a
-                  className="main-profile-links"
+                  className="modal-profile-links"
                   href={linkItem.url}
                   target="_blank"
                   rel="noreferrer"

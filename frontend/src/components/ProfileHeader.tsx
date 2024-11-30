@@ -43,11 +43,11 @@ const ProfileHeader: React.FC = () => {
           <p className="profile-name">{config.main_profile.name}</p>
           <p className="main-profile-info">
             @{config.main_profile.name_en}
-            {windowSize.width >= 610
+            {windowSize.width >= 620
               ? "・" + config.main_profile.name_kana
               : ""}
           </p>
-          {windowSize.width >= 768 ? (
+          {windowSize.width > 768 ? (
             <>
               <p className="main-profile-info">
                 名前：{config.main_profile.name}
@@ -59,7 +59,7 @@ const ProfileHeader: React.FC = () => {
                 出身：{config.main_profile.birthplace}
               </p>
               <p className="main-profile-info">
-                所属：{config.main_profile.majoring}
+                専攻：{config.main_profile.majoring}
               </p>
               <p className="main-profile-info">
                 趣味：{config.main_profile.hobbies.join("、")}

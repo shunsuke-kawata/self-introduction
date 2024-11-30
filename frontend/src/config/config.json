@@ -8,6 +8,7 @@
         "birthplace":"福岡県",
         "university":"佐賀大学大学院",
         "majoring":"知能情報工学",
+        "comment":"人見知りですが、話すのは好きです。",
         "links":[
             {
                 "name":"github",
@@ -21,13 +22,13 @@
             "icon_path":"/assets/profile-header-img.png",
             "alt_string":"自分のアイコン"
         },
-        "hobbies":["ライブ参加","カラオケ","音楽を聴く"],
-        "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN","美的計画"],
-        "favorite_comedians":["ジャルジャル","さらば青春の光","かまいたち","東京03"],
+        "hobbies":["ライブ参加","カラオケ","音楽を聴く","旅行"],
+        "favorite_artists":["RADWIMPS","ゲスの極み乙女","indigo la End","ジェニーハイ","野田洋次郎","illion","礼賛","DADARAY","Creepy Nuts","BUMP OF CHICKEN","米津玄師","UNISON SQUARE GARDEN","NELKE","美的計画"],
+        "favorite_comedians":["ジャルジャル","さらば青春の光","かまいたち","東京03","令和ロマン","天竺鼠","ラランド"],
         "favorite_idles":["日向坂46","櫻坂46","乃木坂46"],
         "respect_people":["野田洋次郎","川谷絵音","小坂菜緒"],
         "favorite_languages":["Python","TypeScript","JavaScript"],
-        "favorite_techniques":["Docker","Next","Firebase"]
+        "favorite_techniques":["Docker","React","Firebase"]
     },
     "main_stacks":{
         "programming_languages":[
@@ -64,7 +65,7 @@
                 "description":"バックエンド開発",
                 "icon_path":"/assets/go-original.svg",
                 "alt_string":"Goのアイコン",
-                "my_score":1
+                "my_score":3
             },
             {
                 "language":"C++",
@@ -258,12 +259,53 @@
                 ]  
             }
         ],
+        "interns":[
+            {
+                "workplace":"株式会社OPTiM　サマーインターン",
+                "date":"2024/09",
+                "using_techniques":["Python","JavaScript","HTML","CSS","C++","Raspberry Pi"],
+                "position":"組み込みシステム",
+                "main_contents":[
+                    "機能単位の設計",
+                    "機能・ユニットテストの実装"
+                ]  
+            }
+        ],
         "hackathons":[
             {
                 "title":"ハックツハッカソン　プテラカップ",
-                "date":"",
-                "product":"",
-                "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase"]
+                "date":"2022/09",
+                "product":"Trello風タスク管理アプリ",
+                "using_techniques":["JavaScript","HTML","CSS","React","Firebase"],
+                "position":"フロントエンド"
+            },
+            {
+                "title":"ガバイソン",
+                "date":"2022/09",
+                "product":"世界のコインを集めるアプリ",
+                "using_techniques":["TypeScript","HTML","CSS","Next","Firebase","Google Map API"],
+                "position":"フロントエンド"
+            },
+            {
+                "title":"ガバイソン",
+                "date":"2023/03",
+                "product":"ペットに関するクイズアプリ",
+                "using_techniques":["JavaScript","HTML","CSS","React","Python","FastAPI","Firebase"],
+                "position":"フロントエンド・バックエンド"
+            },
+            {
+                "title":"ハックツハッカソン　モサカップ",
+                "date":"2023/06",
+                "product":"タスク自動振り分けアプリ",
+                "using_techniques":["JavaScript","HTML","CSS","React","Python","FastAPI","Firebase","OpenAI API"],
+                "position":"フロントエンド"
+            },
+            {
+                "title":"ガバイソン",
+                "date":"2024/03",
+                "product":"BeReal風に佐賀の知識を表示するアプリ",
+                "using_techniques":["Swift","JavaScript","HTML","CSS","React","Ruby","Rails"],
+                "position":"フロントエンド"
             }
         ]
     }
