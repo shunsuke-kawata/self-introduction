@@ -243,14 +243,15 @@
                     "デスクトップアプリの作成・開発管理",
                     "EC2スクレイピングサーバ作成",
                     "Lambdaスクリプトの作成",
-                    "ラズパイ・ESP32などで組み込みシステム・サーバ作成"
+                    "ラズパイなどで組み込みシステム・サーバ作成",
+                    "MySQLのアルバイト向けの勉強会"
                 ]
             },
             {
                 "workplace":"佐賀大学中山研究室",
                 "url":"https://www.fu.is.saga-u.ac.jp/nakalab/",
                 "start_date":"2022/09",
-                "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase"],
+                "using_techniques":["Swift","JavaScript","HTML","CSS","Vue","Firebase","AWS","nginx"],
                 "main_contents":[
                     "iPadサッカースコア管理アプリ作成",
                     "スコアリアルタイム配信アプリ作成",
