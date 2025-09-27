@@ -16,16 +16,47 @@
 }
 
 .profile-header-main{
-    height: 300px;
-    display:flex;
+    min-height: 240px;
+    display: flex;
     align-items: center;
-    padding: 0px 40px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
 }
 
 .modal-profile-links{
     font-size: 14px;
-    line-height: 12px;
-    color:#3ea6ff;
+    line-height: 1.3;
+    color: #3ea6ff;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+.modal-profile-links:hover {
+    color: #5cb3ff;
+}
+
+/* 小さい画面でのリンクテキスト調整 */
+@media(    .more-info-label{
+        font-size: 13px;
+        margin-left: 1px;
+    }width: 600px) {
+    .modal-profile-links{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 480px) {
+    .modal-profile-links{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 360px) {
+    .modal-profile-links{
+        font-size: 11px;
+    }
 }
 
 
@@ -37,39 +68,92 @@
 .main-profile-info{
     color: #AAA;
     font-size: 16px;
-    line-height: 12px;
+    line-height: 1.3;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0 0 8px 0;
+    font-family: "Verdana", "Geneva", sans-serif;
+    flex-wrap: wrap;
+}
+
+.main-profile-item-name{
+    display: inline-block;
+    width: 60px;
+    text-align: left;
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: #AAA;
+    font-family: "Verdana", "Geneva", sans-serif;
+}
+
+.main-profile-item-value {
+    flex: 1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    min-width: 0;
+    color: #AAA;
+    font-family: "Verdana", "Geneva", sans-serif;
 }
 .profile-name{
     font-size: 32px;
     font-weight: bold;
-    line-height: 0px;
+    line-height: 1.2;
+    font-family: "Verdana", "Geneva", sans-serif;
+    margin: 0 0 8px 0;
 }
 .profile-img{
-    height: 80%;
+    height: 65%;
+    max-height: 100px;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .main-profile-links{
     font-size: 16px;
-    line-height: 12px;
-    color:#3ea6ff;
+    line-height: 1.4;
+    color: #3ea6ff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-profile-links:hover {
+    color: #5cb3ff;
 }
 
 .profile-header-info{
-    height: 80%;
-    margin-left:30px;
+    margin-left: 30px;
+    flex: 1;
+    min-width: 0; /* flexアイテムの縮小を許可 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .more-info-label{
-    color:#F1F1F1;
+    color: #F1F1F1;
+    margin-left: 2px;
+    cursor: pointer;
+    text-decoration: underline;
+    white-space: nowrap;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.more-info-label:hover {
+    color: #3ea6ff;
 }
 
 
 .profile-modal-main{
     position: fixed;
-    width:400px;
-    height: 600px;
+    width: min(420px, calc(100vw - 32px));
+    max-height: calc(100vh - 80px);
+    min-height: 300px;
     padding: 20px;
     background-color: #212121;
     border-radius: 15px;
@@ -77,53 +161,88 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 90000;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-@media(max-width:480px) {
+/* タブレットサイズでのモーダル調整 */
+@media(max-width: 768px) {
     .profile-modal-main{
-        width:360px;
-        height: 540px;
+        width: min(380px, calc(100vw - 24px));
+        max-height: calc(100vh - 60px);
+        padding: 18px;
     }
 }
 
-@media(max-width:450px) {
+/* スマートフォン（大）でのモーダル調整 */
+@media(max-width: 600px) {
     .profile-modal-main{
-        width:340px;
-        height: 510px;
-    }
-}
-@media(max-width:420px) {
-    .profile-modal-main{
-        width:320px;
-        height: 480px;
+        width: min(350px, calc(100vw - 20px));
+        max-height: calc(100vh - 40px);
+        padding: 16px;
+        border-radius: 12px;
     }
 }
 
-@media(max-width:400px) {
+/* スマートフォン（中）でのモーダル調整 */
+@media(max-width: 480px) {
     .profile-modal-main{
-        width:300px;
-        height: 450px;
+        width: calc(100vw - 16px);
+        max-height: calc(100vh - 32px);
+        padding: 14px;
+        border-radius: 10px;
+        min-height: 250px;
     }
 }
 
-@media(max-width:380px) {
+/* スマートフォン（小）でのモーダル調整 */
+@media(max-width: 360px) {
     .profile-modal-main{
-        width:280px;
-        height: 420px;
+        width: calc(100vw - 12px);
+        max-height: calc(100vh - 24px);
+        padding: 12px;
+        border-radius: 8px;
+        min-height: 220px;
     }
 }
 .profile-modal-title{
     font-size: 20px;
     font-weight: bold;
-    line-height: 0px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    flex-shrink: 0;
+}
+
+/* 小さい画面でのタイトル調整 */
+@media(max-width: 600px) {
+    .profile-modal-title{
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .profile-modal-title{
+        font-size: 17px;
+        margin: 0 0 6px 0;
+    }
+}
+
+@media(max-width: 360px) {
+    .profile-modal-title{
+        font-size: 16px;
+        margin: 0 0 4px 0;
+    }
 }
 
 .close-button-div{
-    position:absolute;
-    top:23px;
-    right:15px;
-    width:27px;
-    height:27px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     padding: 6px;
     display: flex;
@@ -131,9 +250,12 @@
     justify-content: center;
     transition: background-color 0.2s ease; 
     overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
 }
+
 .batsu-icon-img{
-    width:80%;
+    width: 80%;
     height: 80%;
     object-fit: contain;
 }
@@ -142,64 +264,188 @@
     background-color: #555555;
 }
 
+/* 小さい画面での閉じるボタン調整 */
+@media(max-width: 600px) {
+    .close-button-div{
+        top: 18px;
+        right: 12px;
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 480px) {
+    .close-button-div{
+        top: 16px;
+        right: 10px;
+        width: 26px;
+        height: 26px;
+        padding: 4px;
+    }
+}
+
+@media(max-width: 360px) {
+    .close-button-div{
+        top: 14px;
+        right: 8px;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+    }
+}
+
 .profile-modal-info{
     font-size: 14px;
     display: flex;
     align-items: flex-start;
-    line-height: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    gap: 0;
 }
+
 .profile-item-name{
-    min-width:50px;
     display: inline-block;
+    width: 60px;
+    text-align: left;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .profile-section-item-name{
-    min-width:160px;
     display: inline-block;
+    width: 200px;
+    text-align: left;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .profile-item-value {
-  flex: 1;
-  word-break: break-word;
+    flex: 1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    min-width: 0;
 }
 .info-div{
-    margin:30px 0px;
+    margin: 20px 0px;
+    flex-shrink: 0;
+}
+
+/* モーダルのスクロール可能なコンテンツエリア */
+.modal-content-area {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+/* 小さい画面でのinfo-divの調整 */
+@media(max-width: 600px) {
+    .info-div{
+        margin: 16px 0px;
+    }
+}
+
+@media(max-width: 480px) {
+    .info-div{
+        margin: 14px 0px;
+    }
+}
+
+@media(max-width: 360px) {
+    .info-div{
+        margin: 12px 0px;
+    }
 }
 .icons-img{
     width: 40px;
-    height:40px;
+    height: 40px;
     margin-right: 10px;
     background-color: #F1F1F1;
     border-radius: 50%;
+    flex-shrink: 0;
 }
+
 .urls-div{
     display: flex;
-    justify-content: left; 
+    justify-content: flex-start; 
     align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+/* 小さい画面でのアイコンサイズ調整 */
+@media(max-width: 600px) {
+    .icons-img{
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+    }
+    
+    .urls-div{
+        margin-bottom: 10px;
+        gap: 6px;
+    }
+}
+
+@media(max-width: 480px) {
+    .icons-img{
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+    }
+    
+    .urls-div{
+        margin-bottom: 8px;
+        gap: 4px;
+    }
+}
+
+@media(max-width: 360px) {
+    .icons-img{
+        width: 28px;
+        height: 28px;
+        margin-right: 4px;
+    }
+    
+    .urls-div{
+        margin-bottom: 6px;
+    }
 }
 .links-label{
     line-height: 0px;
 }
 .page-status-change-div{
     display: flex;
-    border-bottom: solid 0.5px #AAA;
-}
-.status-change-label{
-    height:30px;
-    font-size: 20px;
-    display: inline-block;
-    padding: 6px 10px;
-    color: #AAA;
-    margin-right: 10px;
+    border-bottom: solid 2px #555555;
+    flex-wrap: wrap;
+    gap: 4px;
+    background-color: #141414;
+    padding: 12px 0 0 0;
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
-.language-name-label {
-font-size: 18px;
+.status-change-label{
+    height: 30px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 6px 10px 12px 10px;
+    color: #AAA;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: solid 2px transparent;
+    transition: all 0.2s ease;
 }
 
 .not-checked-status-change-label:hover{
-    border-bottom: solid 2px #555555;
+    border-bottom: solid 2px #888888;
+    color: #CCCCCC;
 }
+
 .checked-status{
     color: #F1F1F1;
     border-bottom: solid 2px #F1F1F1;
@@ -224,8 +470,9 @@ font-size: 18px;
 
 .stack-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 要素の大きさを固定 */
-    gap: 16px; /* 要素間のスペースを調整 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 0 8px;
   }
   
 .stack-info-div {
@@ -233,13 +480,16 @@ min-height: 160px;
 border: solid 1px #AAA;
 box-sizing: border-box;
 border-radius: 2px;
+padding: 8px;
 }
 
 .img-and-name {
 margin-top: 10px;
 display: flex;
-justify-content: left;
+justify-content: flex-start; 
 align-items: center;
+flex-wrap: wrap;
+gap: 5px;
 }
 
 .stack-icon-img {
@@ -251,8 +501,11 @@ margin: 0px 10px;
 
 .language-desc {
 overflow-wrap: break-word;
-width: fit-content;
+word-wrap: break-word;
+hyphens: auto;
+width: 100%;
 margin: 10px;
+line-height: 1.4;
 }
 
 
@@ -263,6 +516,8 @@ margin: 10px;
     margin-left: 30px;
     display: flex;
     align-items: flex-start;
+    gap: 0;
+    word-break: break-word;
 }
 
 .main-content-list{
@@ -274,122 +529,167 @@ margin: 10px;
     list-style:none;
 }
 
-@media(max-width:768px) {
-    .stack-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 小さいスクリーンでは幅を少し小さくする */
+/* タブレット・小さめのデスクトップ (900px 以下) */
+@media(max-width: 900px) {
+    .main-profile-item-value {
+        flex: 0 0 auto;
+        width: auto;
     }
 
-    .header-main {
-        height: 200px;
-    }
-    .profile-header-main{
-        height: 180px;
-    }
-    .status-change-label,
-    .main-profile-info,
-    .main-profile-links,
-    .stacks-division-title,
-    .section-info span,
-    .parttime-title span,
-    .parttime-title a ,
-    .language-name-label,
-    .language-desc label,
-    .img-and-name label,
-    .experience-info,
-    .section-info{
-        font-size: 18px;
+    .more-info-label{
+        font-size: 16px;
+        margin-left: 2px;
     }
 }
 
-@media(max-width:680px) {
-    .header-main {
-        height: 180px;
-    }
-    .profile-header-main{
-        height: 160px;
+/* タブレット サイズ (768px 以下) */
+@media(max-width: 768px) {
+    .stack-container {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 12px;
+        padding: 0 4px;
     }
 
-    .status-change-label,
-    .main-profile-info,
-    .main-profile-links,
-    .stacks-division-title,
-    .section-info span,
-    .parttime-title span,
-    .parttime-title a ,
-    .language-name-label,
-    .language-desc label,
-    .img-and-name label,
-    .experience-info,
-    .section-info{
-        font-size: 17px;
+    .header-main {
+        height: 180px;
     }
     
-}
-
-@media(max-width:650px) {
-    .header-main {
-        height: 180px;
-    }
     .profile-header-main{
-        height: 160px;
+        min-height: 210px;
+        padding: 12px 20px;
+        margin-bottom: 10px;
     }
 
+    .profile-header-info{
+        margin-left: 20px;
+    }
+
+    /* フォントサイズを段階的に調整 */
     .status-change-label,
     .main-profile-info,
     .main-profile-links,
     .stacks-division-title,
     .section-info span,
     .parttime-title span,
-    .parttime-title a ,
+    .parttime-title a,
     .language-name-label,
     .language-desc label,
     .img-and-name label,
     .experience-info,
-    .section-info{
+    .section-info {
         font-size: 16px;
     }
-    
+
+    .profile-name {
+        font-size: 28px;
+    }
 }
 
-@media (max-width: 560px) {
+/* スマートフォン（大） (600px 以下) */
+@media(max-width: 600px) {
+    .header-main {
+        height: 160px;
+    }
+    
+    .profile-header-main{
+        min-height: 190px;
+        padding: 10px 15px;
+        margin-bottom: 6px;
+    }
+
+    .profile-header-info{
+        margin-left: 15px;
+    }
+
+    .stack-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
     .status-change-label,
     .main-profile-info,
     .main-profile-links,
     .stacks-division-title,
     .section-info span,
     .parttime-title span,
-    .parttime-title a ,
+    .parttime-title a,
     .language-name-label,
     .language-desc label,
     .img-and-name label,
     .experience-info,
-    .section-info{
-        font-size: 14px;
+    .section-info {
+        font-size: 15px;
     }
 
-    .status-change-label {
-        height: 21px;
-        display: inline-block;
-        padding: 6px 6px;
+    .profile-name {
+        font-size: 24px;
+    }
+}
+
+/* スマートフォン（中） (480px 以下) */
+@media (max-width: 480px) {
+    .profile-header-main {
+        min-height: 170px;
+        padding: 8px 10px;
+        margin-bottom: 4px;
+    }
+
+    .profile-header-info{
+        margin-left: 10px;
+    }
+
+    .stack-container {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 8px;
+    }
+
+    .stack-info-div {
+        min-height: 140px;
+        padding: 6px;
+    }
+
+    .status-change-label,
+    .main-profile-info,
+    .main-profile-links,
+    .stacks-division-title,
+    .section-info span,
+    .parttime-title span,
+    .parttime-title a,
+    .language-name-label,
+    .language-desc label,
+    .img-and-name label,
+    .experience-info,
+    .section-info {
+        font-size: 14px;
     }
 
     .profile-name {
         font-size: 20px;
     }
+
+    .profile-img {
+        height: 70%;
+    }
 }
 
-@media (max-width: 400px) {
+/* スマートフォン（小） (360px 以下) */
+@media (max-width: 360px) {
     .profile-header-main {
-        height: 140px;
-        padding: 0px 2px;
+        min-height: 150px;
+        padding: 6px 8px;
+        margin-bottom: 3px;
+    }
+
+    .profile-header-info{
+        margin-left: 8px;
     }
 
     .stack-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 
-    .profile-img {
-        height: 60%;
+    .stack-info-div {
+        min-height: 120px;
     }
 
     .status-change-label,
@@ -398,25 +698,184 @@ margin: 10px;
     .stacks-division-title,
     .section-info span,
     .parttime-title span,
-    .parttime-title a ,
+    .parttime-title a,
     .language-name-label,
     .language-desc label,
     .img-and-name label,
     .experience-info,
-    .section-info{
-        font-size: 14px;
-    }
-
-    .status-change-label {
-        height: 21px;
-        padding: 3px 3px;
+    .section-info {
+        font-size: 13px;
     }
 
     .profile-name {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .profile-img {
+        height: 65%;
+    }
+
+    .stack-icon-img {
+        width: 35px;
+        height: 35px;
     }
 }
 
+/* タブレットサイズでの調整 */
+@media (max-width: 768px) {
+    .profile-section-item-name{
+        width: 180px;
+    }
 
+    .main-profile-item-name{
+        width: 55px;
+    }
 
-  
+    .page-status-change-div{
+        padding: 10px 0 0 0;
+    }
+
+    .status-change-label{
+        font-size: 18px;
+        padding: 4px 8px 10px 8px;
+        height: 26px;
+    }
+
+    .main-profile-links{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* より小さい画面でのプロファイル項目の調整 */
+@media (max-width: 480px) {
+    .section-info{
+        margin-left: 15px;
+    }
+
+    .profile-section-item-name{
+        width: 150px;
+    }
+
+    .profile-item-name{
+        width: 50px;
+    }
+
+    .main-profile-item-name{
+        width: 50px;
+    }
+
+    .main-profile-item-value {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .profile-modal-info {
+        font-size: 13px;
+    }
+
+    .page-status-change-div{
+        padding: 8px 0 0 0;
+    }
+
+    .status-change-label{
+        font-size: 16px;
+        padding: 3px 6px 8px 6px;
+        height: 22px;
+    }
+
+    .more-info-label{
+        font-size: 15px;
+        margin-left: 1px;
+    }
+
+    .main-profile-links{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-info{
+        margin-left: 10px;
+    }
+
+    .profile-section-item-name{
+        width: 120px;
+    }
+
+    .profile-item-name{
+        width: 45px;
+    }
+
+    .main-profile-item-name{
+        width: 45px;
+    }
+
+    .main-profile-item-value {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .profile-modal-info {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .page-status-change-div{
+        padding: 6px 0 0 0;
+    }
+
+    .status-change-label{
+        font-size: 14px;
+        padding: 2px 4px 6px 4px;
+        height: 18px;
+    }
+
+    .more-info-label{
+        font-size: 14px;
+        margin-left: 1px;
+    }
+
+    .main-profile-links{
+        font-size: 13px;
+        margin-top: 6px;
+    }
+}
+
+/* 非常に小さい画面では縦に積み重ね */
+@media (max-width: 300px) {
+    .profile-modal-info,
+    .section-info,
+    .main-profile-info {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .profile-item-name,
+    .profile-section-item-name,
+    .main-profile-item-name {
+        width: auto;
+        text-align: left;
+    }
+    
+    .main-profile-item-value {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    
+    .profile-modal-info {
+        font-size: 11px;
+    }
+
+    .more-info-label{
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 2px;
+    }
+
+    .main-profile-links{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}

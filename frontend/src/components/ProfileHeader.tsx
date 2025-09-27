@@ -47,28 +47,46 @@ const ProfileHeader: React.FC = () => {
               ? "・" + config.main_profile.name_kana
               : ""}
           </p>
-          {windowSize.width > 768 ? (
+          {windowSize.width > 900 ? (
             <>
               <p className="main-profile-info">
-                名前：{config.main_profile.name}
+                <span className="main-profile-item-name">名前</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.name}
+                </span>
               </p>
               <p className="main-profile-info">
-                誕生日：{config.main_profile.birthday}
+                <span className="main-profile-item-name">誕生日</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.birthday}
+                </span>
               </p>
               <p className="main-profile-info">
-                出身：{config.main_profile.birthplace}
+                <span className="main-profile-item-name">出身</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.birthplace}
+                </span>
               </p>
               <p className="main-profile-info">
-                専攻：{config.main_profile.majoring}
+                <span className="main-profile-item-name">専攻</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.majoring}
+                </span>
               </p>
               <p className="main-profile-info">
-                趣味：{config.main_profile.hobbies.join("、")}
+                <span className="main-profile-item-name">趣味</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.hobbies.join("、")}
+                </span>
               </p>
             </>
           ) : (
             <>
               <p className="main-profile-info">
-                名前：{config.main_profile.name}
+                <span className="main-profile-item-name">名前</span>：
+                <span className="main-profile-item-value">
+                  {config.main_profile.name}
+                </span>
                 <label
                   className="more-info-label"
                   onClick={() => openProfileModal()}
